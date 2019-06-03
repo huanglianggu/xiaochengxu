@@ -1,0 +1,13 @@
+/* pages/base/base.wxss */
+@import '../../style/common.wxss';
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+}
+
+.child{
+  width: 100rpx;
+  height: 100rpx;
+  background: #bbb;
+}

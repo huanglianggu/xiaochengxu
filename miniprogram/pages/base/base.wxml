@@ -1,0 +1,21 @@
+<view>hello world</view>
+<view>{{msg}}</view>
+<image class='banner' src='{{img}}'></image>
+<view wx:for="{{arr}}" wx:key="index">
+{{index}} {{item}}
+</view>
+<view wx:for="{{list}}" wx:key="index">
+{{item.name}} {{item.age}}
+</view>
+
+<view wx:if="{{isLogin}}">已登录</view>
+<view wx:else>请登录</view>
+
+<view hidden='{{isLogin}}'>hidden</view>
+
+<view class='box' catch:tap='onTapBoxHandler' data-id='1234'>
+  <view class='child' catch:tap='onTapChildHandler'></view>
+</view>
+
+<button size='mini' bindtap='onTapHandler'>点我加1</button>
+<view>{{count}}</view>
